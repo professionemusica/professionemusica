@@ -1092,260 +1092,196 @@
       - Per aggiungere un modulo, duplica un oggetto dentro "modules"
     */
 
-    const siteData = {
-      brandName: "GLB",
-      brandSub: "Music Studio",
-      heroEyebrow: "Workshop modulare",
-      heroTitle: "Professione Musica",
-      heroSubtitle:
-        "Un percorso pratico per trasformare idee musicali in competenze professionali: scrittura, arrangiamento, produzione, partiture e workflow reale di studio.",
-      heroNote:
-        "La pagina è già impostata con un'estetica ispirata alla grafica del tuo poster: fondo blu profondo, titoli serif in corsivo, superfici trasparenti e look da jewel case / plastica lucida.",
-      highlights: [
-        {
-          title: "3 moduli",
-          text: "Percorso strutturato in moduli autonomi ma collegati tra loro."
-        },
-        {
-          title: "€350 ciascuno",
-          text: "Ogni modulo ha un costo fisso e può essere frequentato singolarmente."
-        },
-        {
-          title: "Teoria + laboratorio",
-          text: "Approccio concreto con applicazione pratica e sviluppo di materiale personale."
-        }
+const siteData = {
+  brandName: "GLB",
+  brandSub: "Music Studio",
+  heroEyebrow: "Workshop professionale",
+  heroTitle: "Professione Musica",
+  heroSubtitle:
+    "Percorso avanzato rivolto a musicisti già formati (post-conservatorio) per sviluppare competenze concrete e immediatamente spendibili nel mondo del lavoro musicale.",
+  heroNote:
+    "Formazione orientata al lavoro reale: produzione, arrangiamento, partiture e workflow professionale di studio.",
+  highlights: [
+    {
+      title: "3 moduli",
+      text: "Percorso strutturato e orientato al lavoro professionale."
+    },
+    {
+      title: "€350 ciascuno",
+      text: "Moduli indipendenti, frequentabili singolarmente."
+    },
+    {
+      title: "Approccio reale",
+      text: "Simulazione di workflow professionali e casi concreti."
+    }
+  ],
+  pricingTitle: "Ogni modulo: €350",
+  pricingText:
+    "Ogni modulo è progettato per fornire competenze immediatamente applicabili nel lavoro musicale.",
+  modulesHeading: "I moduli del percorso",
+  modulesIntro:
+    "Ogni modulo è costruito per simulare situazioni reali di lavoro e sviluppare competenze professionali concrete.",
+  posterTitle: "Professione Musica",
+  posterWorkshop: "Workshop",
+  posterTagline: "Dal conservatorio al lavoro reale.",
+  posterContact: "Colloquio conoscitivo gratuito · Partenza da maggio",
+  nav: [
+    { label: "Home", href: "#top" },
+    { label: "Moduli", href: "#moduli" },
+    { label: "Contatti", href: "#contatti" }
+  ],
+  modules: [
+    {
+      number: "01",
+      title: "Composizione, Orchestrazione e Arrangiamento",
+      price: "€350",
+      duration: "Modulo singolo",
+      format: "Teoria + laboratorio",
+      summary:
+        "Modulo orientato alla scrittura musicale professionale, con utilizzo e analisi di partiture originali provenienti da produzioni pop reali.",
+      learn: [
+        "Ruoli professionali: compositore, orchestratore, arrangiatore",
+        "Scrittura per orchestra, ensemble, band e produzioni pop",
+        "Sviluppo del materiale musicale",
+        "Analisi di partiture originali di produzioni reali"
       ],
-      pricingTitle: "Ogni modulo: €350",
-      pricingText:
-        "Puoi presentare i moduli singolarmente oppure come percorso completo. Il layout è già predisposto per aggiungere altri moduli scorrendo la pagina.",
-      modulesHeading: "I moduli del percorso",
-      modulesIntro:
-        "Qui sotto trovi una struttura scorrevole già pronta, con contenuti riordinati in modo web-friendly. Ogni modulo mostra costo, obiettivi, risultati finali e articolazione delle lezioni.",
-      posterTitle: "Professione Musica",
-      posterWorkshop: "Workshop",
-      posterTagline: "Dall'idea alla realizzazione del tuo brano.",
-      posterContact: "Partenza da maggio · Colloquio conoscitivo gratuito",
-      nav: [
-        { label: "Home", href: "#top" },
-        { label: "Moduli", href: "#moduli" },
-        { label: "Contatti", href: "#contatti" }
+      outcome: [
+        "Realizzazione di un brano o arrangiamento professionale",
+        "Metodo di lavoro replicabile",
+        "Capacità di adattarsi a diversi contesti lavorativi",
+        "Approccio concreto alla scrittura musicale"
       ],
-      modules: [
+      lessons: [
         {
-          number: "01",
-          title: "Composizione, Orchestrazione e Arrangiamento",
-          price: "€350",
-          duration: "Modulo singolo",
-          format: "Teoria + laboratorio",
-          summary:
-            "Un modulo dedicato alla scrittura musicale, alla differenza tra i ruoli di compositore, orchestratore e arrangiatore e alla costruzione di un metodo di lavoro applicabile a organici diversi.",
-          learn: [
+          title: "Lezione 1 — Ruoli, contesti e organici",
+          topics: [
             "Differenza tra composizione, orchestrazione e arrangiamento",
-            "Scrittura per orchestra, ensemble, musica da camera, band e big band",
-            "Sviluppo del materiale musicale: melodia, armonia, ritmo e timbro",
-            "Tecniche di orchestrazione, raddoppi, ruoli orchestrali e colore"
-          ],
-          outcome: [
-            "Realizzazione di una composizione o arrangiamento completo",
-            "Comprensione dei principi di orchestrazione e arrangiamento",
-            "Capacità di scrivere per diversi organici",
-            "Metodo di lavoro replicabile in contesti professionali"
-          ],
-          lessons: [
-            {
-              title: "Lezione 1 — Ruoli, contesti e organici",
-              topics: [
-                "Differenza tra composizione, orchestrazione e arrangiamento",
-                "Esempi dello stesso materiale musicale in organici diversi",
-                "Contesti professionali della scrittura musicale",
-                "Differenze tra scrittura per concerto, film, disco, televisione e musical",
-                "Conoscenza delle famiglie strumentali e funzioni degli strumenti",
-                "Laboratorio: idea musicale, sviluppo di un breve materiale, riduzione pianistica e brogliaccio"
-              ]
-            },
-            {
-              title: "Lezione 2 — Dal materiale alla scrittura",
-              topics: [
-                "Elementi del materiale musicale: melodia, armonia, ritmo, timbro",
-                "Trasformazione e sviluppo del materiale",
-                "Tecniche di variazione ed elaborazione motivica",
-                "Differenze tra scrittura pianistica e scrittura per ensemble/orchestra",
-                "Armonizzazione a più voci e tipologie di voicing",
-                "Laboratorio: orchestrazione del materiale composto e scrittura per piccolo ensemble"
-              ]
-            },
-            {
-              title: "Lezione 3 — Tecniche di orchestrazione e arrangiamento",
-              topics: [
-                "Distribuzione delle voci e raddoppi",
-                "Scrittura omofonica e polifonica",
-                "Uso del colore orchestrale",
-                "Equilibrio, trasparenza e funzioni delle parti strumentali",
-                "Arrangiamento per orchestra e orchestra + band",
-                "Laboratorio: realizzazione di un'orchestrazione o arrangiamento"
-              ]
-            },
-            {
-              title: "Lezione 4 — Revisione e metodo di lavoro",
-              topics: [
-                "Revisione delle partiture degli studenti",
-                "Discussione delle scelte compositive e orchestrali",
-                "Analisi di partiture e lavori professionali",
-                "Come preparare una partitura professionale",
-                "Come presentare e consegnare un lavoro musicale",
-                "Definizione di un metodo di lavoro replicabile"
-              ]
-            }
+            "Contesti lavorativi reali",
+            "Famiglie strumentali",
+            "Sviluppo di un'idea musicale"
           ]
         },
         {
-          number: "02",
-          title: "Produzione Musicale",
-          price: "€350",
-          duration: "Modulo singolo",
-          format: "Mattina teorica + pomeriggio laboratorio",
-          summary:
-            "Un modulo centrato sul workflow di produzione in DAW, sul percorso del segnale audio e sugli strumenti fondamentali di editing, equalizzazione, dinamica, spazialità e finalizzazione.",
-          learn: [
-            "Segnale audio, conversione A/D-D/A e gain staging",
-            "Organizzazione di sessioni Logic: tracce, bus, routing e template",
-            "Equalizzazione correttiva e creativa, compressione e gestione dei transienti",
-            "Riverbero, delay, automazioni, campionamento e cenni di mastering"
-          ],
-          outcome: [
-            "Realizzazione di una produzione musicale completa",
-            "Comprensione del flusso del segnale audio",
-            "Uso consapevole di EQ, compressione ed effetti",
-            "Gestione professionale di una sessione di produzione in DAW"
-          ],
-          lessons: [
-            {
-              title: "Lezione 1 — Segnale audio, DAW e workflow",
-              topics: [
-                "Fasi della produzione: pre-produzione, produzione, post-produzione",
-                "Caratteristiche del suono e visualizzazione audio",
-                "Percorso del segnale, conversione digitale e livelli di lavoro",
-                "Struttura e organizzazione di una sessione in DAW (Logic)",
-                "Routing, tracce, bus e template di lavoro",
-                "Editing MIDI, editing audio e setup della sessione"
-              ]
-            },
-            {
-              title: "Lezione 2 — Equalizzazione e gestione delle frequenze",
-              topics: [
-                "Funzionamento degli equalizzatori",
-                "Tipologie di EQ e parametri principali",
-                "Spazio in frequenza e mascheramento tra strumenti",
-                "Equalizzazione correttiva e creativa",
-                "Analisi di esempi audio",
-                "Applicazione pratica dell'EQ e organizzazione degli stems"
-              ]
-            },
-            {
-              title: "Lezione 3 — Dinamica e compressione",
-              topics: [
-                "Concetto di dinamica nel suono",
-                "Funzionamento del compressore",
-                "Parametri principali della compressione",
-                "Tipologie di compressori e uso su tracce e bus",
-                "Compressione parallela e sidechain",
-                "Gestione dei transienti ed energia della produzione"
-              ]
-            },
-            {
-              title: "Lezione 4 — Spazio, campionamento e finalizzazione",
-              topics: [
-                "Riverbero e gestione della profondità nel mix",
-                "Cenni sull'uso del delay",
-                "Campionamento, sampler, layering e manipolazione dei campioni",
-                "Automazioni di volume, effetti e MIDI",
-                "Impostazione di un mix e cenni di mastering",
-                "Esportazione finale del progetto"
-              ]
-            }
+          title: "Lezione 2 — Dal materiale alla scrittura",
+          topics: [
+            "Sviluppo melodico, armonico e ritmico",
+            "Tecniche di variazione",
+            "Scrittura per ensemble",
+            "Applicazione pratica"
           ]
         },
         {
-          number: "03",
-          title: "Trascrizione per l'Esecuzione dal Vivo e Informatica Musicale",
-          price: "€350",
-          duration: "Modulo singolo",
-          format: "Teoria + laboratorio applicato",
-          summary:
-            "Un modulo pensato per comprendere il lavoro del copista d'orchestra, la preparazione di partiture professionali e l'uso di software e formati utili alla produzione live.",
-          learn: [
-            "Ruolo del copista e organizzazione di un live o di una produzione televisiva",
-            "Tipologie di file musicali: audio, MIDI e MusicXML",
-            "Conversione dei materiali musicali in partiture leggibili",
-            "Scrittura, editing, layout e preparazione parti con Sibelius"
-          ],
-          outcome: [
-            "Comprensione del lavoro del copista d'orchestra in Italia",
-            "Capacità di gestire e preparare partiture per l'esecuzione dal vivo",
-            "Utilizzo di software di notazione musicale",
-            "Conoscenza del flusso di lavoro nella produzione musicale professionale"
-          ],
-          lessons: [
-            {
-              title: "Lezione 1 — Introduzione alla produzione live",
-              topics: [
-                "Ruolo del copista e dell'orchestratore",
-                "Differenze tra orchestre pop e classiche",
-                "Struttura e funzione della partitura d'orchestra",
-                "Organizzazione di un live, trasmissione televisiva o registrazione",
-                "Figure professionali coinvolte e logistica del materiale musicale",
-                "Sistemi di stampa professionali e lettura su iPad"
-              ]
-            },
-            {
-              title: "Lezione 2 — Informatica musicale e formati dei file",
-              topics: [
-                "Tipologie di file musicali: audio, MIDI, MusicXML",
-                "Trasformazione e conversione dei file musicali",
-                "Strumenti informatici per la composizione",
-                "Principali DAW utilizzate nella produzione musicale",
-                "Software di notazione musicale",
-                "Laboratorio: conversione di file MIDI/XML e organizzazione della partitura"
-              ]
-            },
-            {
-              title: "Lezione 3 — Scrittura musicale con Sibelius",
-              topics: [
-                "Panoramica del software Sibelius",
-                "Struttura e elementi di una partitura digitale",
-                "Strumenti di scrittura ed editing",
-                "Filtri, scorciatoie e metodi di lavoro veloci",
-                "Gestione del layout e dello stile della partitura",
-                "Preparazione delle parti strumentali"
-              ]
-            },
-            {
-              title: "Lezione 4 — Simulazione di un progetto live e metodo di lavoro",
-              topics: [
-                "Simulazione del lavoro di copisteria per un concerto o produzione live",
-                "Trascrizione e preparazione delle partiture per l'esecuzione",
-                "Applicazione del workflow professionale",
-                "Revisione e correzione dei lavori degli studenti",
-                "Creazione e finalizzazione di una partitura",
-                "Definizione di un metodo operativo riutilizzabile"
-              ]
-            }
+          title: "Lezione 3 — Tecniche di arrangiamento",
+          topics: [
+            "Distribuzione delle voci",
+            "Colore orchestrale",
+            "Scrittura professionale",
+            "Arrangiamento completo"
+          ]
+        },
+        {
+          title: "Lezione 4 — Revisione e metodo",
+          topics: [
+            "Revisione lavori",
+            "Analisi partiture reali",
+            "Metodo di lavoro",
+            "Preparazione materiale professionale"
           ]
         }
-      ],
-      bonusTitle: "Produzione del tuo brano",
-      bonusText:
-        "Alla fine del percorso puoi prevedere una fase finale in studio per mettere in pratica ciò che è stato sviluppato nei moduli precedenti e finalizzare il lavoro iniziato durante il corso.",
-      contactTitle: "Contattaci per informazioni",
-      contactText:
-        "Questa sezione finale è già pronta per inserire mail, telefono, link a Instagram, pulsante WhatsApp o un eventuale modulo di contatto esterno. Puoi anche sostituire questo blocco con un form personalizzato.",
-      contacts: [
-        { label: "Email", value: "glbmusicstudio@gmail.com" },
-        { label: "Telefono", value: "329 472 7205" },
-        { label: "Colloquio", value: "Conoscitivo gratuito" },
-        { label: "Partenza", value: "Da maggio" }
       ]
-    };
+    },
+    {
+      number: "02",
+      title: "Produzione Musicale",
+      price: "€350",
+      duration: "Modulo singolo",
+      format: "Teoria + laboratorio",
+      summary:
+        "Workflow completo di produzione musicale orientato a contesti professionali reali.",
+      learn: [
+        "Gestione del segnale audio",
+        "Organizzazione sessioni DAW",
+        "Equalizzazione e compressione",
+        "Workflow professionale"
+      ],
+      outcome: [
+        "Produzione completa di un brano",
+        "Autonomia in studio",
+        "Controllo del suono",
+        "Metodo professionale"
+      ],
+      lessons: [
+        {
+          title: "Lezione 1 — Workflow",
+          topics: ["Segnale audio", "DAW", "Setup sessione"]
+        },
+        {
+          title: "Lezione 2 — Equalizzazione",
+          topics: ["EQ", "Frequenze", "Mix"]
+        },
+        {
+          title: "Lezione 3 — Dinamica",
+          topics: ["Compressione", "Transienti", "Energia"]
+        },
+        {
+          title: "Lezione 4 — Finalizzazione",
+          topics: ["Mix", "Master base", "Export"]
+        }
+      ]
+    },
+    {
+      number: "03",
+      title: "Trascrizione e Informatica Musicale",
+      price: "€350",
+      duration: "Modulo singolo",
+      format: "Teoria + laboratorio",
+      summary:
+        "Modulo basato sull'utilizzo di partiture originali di produzioni pop reali per simulare il lavoro professionale di copisteria musicale.",
+      learn: [
+        "Ruolo del copista",
+        "Gestione file MIDI, audio, XML",
+        "Preparazione partiture",
+        "Workflow professionale reale"
+      ],
+      outcome: [
+        "Preparazione partiture professionali",
+        "Simulazione lavoro reale",
+        "Utilizzo software notazione",
+        "Metodo operativo concreto"
+      ],
+      lessons: [
+        {
+          title: "Lezione 1 — Produzione live",
+          topics: ["Copista", "Orchestra pop", "Organizzazione live"]
+        },
+        {
+          title: "Lezione 2 — File musicali",
+          topics: ["MIDI", "XML", "Conversione"]
+        },
+        {
+          title: "Lezione 3 — Sibelius",
+          topics: ["Scrittura", "Layout", "Parti"]
+        },
+        {
+          title: "Lezione 4 — Simulazione reale",
+          topics: ["Progetto reale", "Revisione", "Metodo"]
+        }
+      ]
+    }
+  ],
+  bonusTitle: "Produzione del tuo brano",
+  bonusText:
+    "Possibilità di finalizzare un progetto musicale completo applicando le competenze sviluppate durante il percorso.",
+  contactTitle: "Contattaci per informazioni",
+  contactText:
+    "Scrivici o chiamaci per fissare un colloquio conoscitivo gratuito.",
+  contacts: [
+    { label: "Email", value: "glbmusicstudio@gmail.com" },
+    { label: "Telefono", value: "329 472 7205" },
+    { label: "Colloquio", value: "Gratuito" },
+    { label: "Partenza", value: "Da maggio" }
+  ]
+};
 
     const $ = (selector) => document.querySelector(selector);
 
